@@ -1,0 +1,49 @@
+var textX = 50;
+
+var ellipseDiam = 100;
+
+function setup() {
+    createCanvas(800, 800)
+    
+
+    console.log('test')
+//    
+    fill('blue')
+    ellipse(600, 500, 100, 100);
+    
+    
+    fill('red')
+    rect(100, 100, 100, 100)
+//    
+    fill('white')
+    textSize(30)
+    text('Sample Text', 100, 500)
+    
+    
+}
+
+function draw() {
+    background('#FF6663')
+    text('Happy Holidays', textX, 300)
+    textX += 2;
+    
+    if (textX > 250) {
+        textX = 250;
+    }
+    
+    ellipse(00, 300, 100, 400)
+
+    fill('#E0FF4F')
+    
+    ellipse(mouseX, mouseY, 20, 20)
+}
+
+function mousePressed() {
+
+    ellipse(62, 234, 200, 400)
+    
+    
+   textX = -200;
+    
+    
+}
